@@ -1,0 +1,23 @@
+<form action="/edit/update/{{peliculas._id}}", method="post">
+    <div>
+        <label for="title"> Escribe un titulo:</label>
+        <input type="text" name="titulo" value="{{peliculas.titulo}}">
+    </div>
+    <div>
+        <label for="genero">Escribe un Genero:</label>
+        <input type="text" name="genero" value="{{peliculas.genero}}">
+    </div>
+    <div>
+        <label for="director">Escribe el Director:</label>
+        <input type="text" name="director" value="{{peliculas.director}}">
+    </div>
+    <div>
+        <label for="estreno">Escribe la fecha de Estreno:</label>
+        <input type="date" name="estreno" value="{{peliculas.estreno}}">
+    </div>
+    <div>
+        <button>
+            Update
+        </button>
+    </div>
+</form>

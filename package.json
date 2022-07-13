@@ -1,0 +1,28 @@
+{
+  "name": "inacap",
+  "version": "1.0.0",
+  "description": "mi primer programa con Mongodb",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/index.js",
+    "dev": " nodemon src/index.js"
+    
+  },
+  "repository": {
+    "type": "git",
+    "url": "}"
+  },
+  "author": "Inacap",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1",
+    "express-handlebars": "^6.0.6",
+    "mongoose": "^6.3.8",
+    "morgan": "^1.10.0",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  }
+}

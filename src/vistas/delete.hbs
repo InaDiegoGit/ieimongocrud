@@ -1,0 +1,32 @@
+<div class="row">
+    <!-- agregamos una fila única dentro del contenedor (cada fila tine 12 columnas) -->
+
+    {{#each peliculas}}
+    <!-- como es un arreglo, se analiza documento a documento  -->
+
+    <div class="col-md-4 p-2">
+        <div class="container bg-danger">
+            <div class="row">
+                <div class="col text-center">
+                    <b><h3> {{titulo}} </h3> </b> <!-- Muestra el nombre comun en el Json  -->
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">Genero:</div>
+                <div class="col">{{genero}}</div> <!-- Muestra el nombre cientifico en el Json  -->
+            </div>
+            <div class="row">
+                <div class="col">Director:</div>
+                <div class="col">{{director}}</div> <!-- Muestra el nombre cientifico en el Json  -->
+            </div>
+            <div class="row">
+                <div class="col">Estreno:</div>
+                <div class="col">{{estreno}}</div> <!-- Muestra el nombre cientifico en el Json  -->
+            </div>
+            <a href="/delete/{{_id}}" class="btn btn-dark">Delete</a>
+        </div>
+    </div>
+
+    {{/each}}
+
+</div>
